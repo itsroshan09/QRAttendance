@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!-- Gradient colors for the button -->
+    <gradient
+        android:startColor="#FF2222"
+        android:endColor="#FFAD34"
+        android:angle="45" />
+
+    <!-- Corner radius to make it rounded -->
+    <corners android:radius="8dp" />
+</shape>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><!-- form_activity.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/student_reg_background"
+    android:padding="60dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="32dp"
+        android:fontFamily="times"
+        android:text="Student Registration"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Form Box Background -->
+    <LinearLayout
+        android:id="@+id/formLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Form elements -->
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextRollNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Roll No"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextParentMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            android:hint="Parent's Mobile Number"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#1D61C8"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

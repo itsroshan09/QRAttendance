@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/adminbg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AdminControl">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Admin Control"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#f00"
+        android:fontFamily="times"
+        android:textAlignment="center"/>
+
+    <ImageButton
+        android:id="@+id/allstudents"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:onClick="attendancesheet"
+        android:src="@drawable/attendance_sheet"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/all_teachers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="allteachers"
+        android:background="@null"
+        android:src="@drawable/all_teachers"
+        android:text="All Teachers" />
+
+    <ImageButton
+        android:id="@+id/deleteAttendance"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/checkperf"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:onClick="deleteDataContents"
+        android:src="@drawable/delete_all_data"
+        tools:ignore="ContentDescription,ImageContrastCheck,RtlHardcoded,SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/checkperf2"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allstudents"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:src="@drawable/check_performance"
+        tools:ignore="ContentDescription,ImageContrastCheck,RtlHardcoded,SpeakableTextPresentCheck" />
+
+
+    <ImageButton
+        android:id="@+id/buttonSubmit2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:onClick="open"
+        android:src="@drawable/leave_application"
+        android:text="Submit" />
+
+    <ImageButton
+        android:id="@+id/buttonAllStudents"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:onClick="allstudents"
+        android:src="@drawable/button_allstudents"
+        android:text="Submit" />
+</LinearLayout>

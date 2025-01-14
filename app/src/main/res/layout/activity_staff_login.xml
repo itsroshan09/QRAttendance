@@ -1,0 +1,79 @@
+<!-- res/layout/activity_teacher_login.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/staff_background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="times"
+        android:gravity="center_horizontal"
+        android:text="Staff Activities"
+        android:textColor="#F00"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hellouser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <!-- TextViews or other UI elements to display scanned data -->
+    <ImageButton
+        android:id="@+id/btnScanQR"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="@color/white"
+        android:outlineAmbientShadowColor="@color/black"
+        android:src="@drawable/scanqrbtn"
+        tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,UnusedAttribute" />
+
+    <ImageButton
+        android:id="@+id/allstudents"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/btnScanQR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:src="@drawable/view_attendance"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/checkperf"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/allstudents"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:src="@drawable/button_check_performancebtn"
+        tools:ignore="ContentDescription,ImageContrastCheck,RtlHardcoded,SpeakableTextPresentCheck" />
+
+
+    <ImageButton
+        android:id="@+id/absentstudents"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/checkperf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/white"
+        android:onClick="absent"
+        android:src="@drawable/absentstudentsbtn"
+        tools:ignore="ContentDescription,ImageContrastCheck,RtlHardcoded,SpeakableTextPresentCheck" />
+
+
+</RelativeLayout>

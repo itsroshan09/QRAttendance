@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ClassMate</string>
+    <string name="file_contents">File Contents</string>
+    <string name="rollno">Roll  No</string>
+    <string name="name">Name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="todo">TODO</string>
+    <string name="total_lectures_no">Total Lectures (no.)</string>
+    <string name="student_roll_no">Student Roll No</string>
+    <string name="scan_this_qr_from_your_teacher">Note: Scan The QR From Your Teacher</string>
+    <string name="new_user">New User ?</string>
+    <string name="signup">SignUp</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="security_key">Security Key</string>
+    <string name="subject">Subject\n</string>
+</resources>
